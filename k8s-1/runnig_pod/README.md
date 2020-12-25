@@ -1,6 +1,6 @@
     microk8s.kubectl create -f kuard-pod.yaml
 
-    microk8s.kubectl port-forward  --address 0.0.0.0 kuard  8080:8080
+    microk8s.kubectl port-forward  --address 0.0.0.0 kuard  5000:8080
 
     microk8s.kubectl exec kuard date
 
